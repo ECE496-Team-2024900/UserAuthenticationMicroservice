@@ -1,4 +1,4 @@
-name: Deploy User Authentication Microservice
+name: Deploy User Authentication Microservice #name
 
 on:
   push:
