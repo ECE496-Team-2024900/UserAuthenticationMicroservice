@@ -21,5 +21,6 @@ from userauthserver import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index)
+    path('', views.index),
+    path('user/update_password/', views.update_password, name='update_password'),
 ]
