@@ -21,5 +21,6 @@ from userauthserver import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index)
+    path('', views.index),
+    path('user_auth/check_if_user_exists', views.check_if_user_exists)
 ]

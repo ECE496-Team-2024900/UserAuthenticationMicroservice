@@ -1,0 +1,9 @@
+/.idea/.gitignore
+/db.sqlite3
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/userauthserver/remotepdt-900-firebase-adminsdk-lmp6f-3145cb9512.json
+/.idea/userauthserver.iml
+/.idea/vcs.xml

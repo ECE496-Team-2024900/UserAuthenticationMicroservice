@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hdp$3b!se%y@tg8et2gphdqpyq^b96e0t309_g=pm=2l=)5xfq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.131.157.156', 'localhost', '127.0.0.1', 'ec2-3-131-157-156.us-east-2.compute.amazonaws.com', '10.0.2.2']
 
 
 # Application definition
@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
+    'userauthserver',
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -123,3 +126,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("userauthserver/remotepdt-900-firebase-adminsdk-lmp6f-3145cb9512.json")
+firebase_admin.initialize_app(cred)
