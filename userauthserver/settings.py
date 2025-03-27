@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hdp$3b!se%y@tg8et2gphdqpyq^b96e0t309_g=pm=2l=)5xfq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.131.157.156', 'localhost', '127.0.0.1', 'ec2-3-131-157-156.us-east-2.compute.amazonaws.com', '10.0.2.2']
+ALLOWED_HOSTS = ['3.131.157.156', 'localhost', '127.0.0.1', 'ec2-3-131-157-156.us-east-2.compute.amazonaws.com', '10.0.2.2', 'https://user-auth-hdmm.onrender.com']
 
 
 # Application definition
